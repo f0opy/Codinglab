@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="header_content">
+
+			<div class="header_logo">
+				<a href="index.html" class="header_logo" >
+					<img src="img/logoPngAitututors.png" alt="" width="198px" height="38px">
+				</a>
+			</div>
+
+			<div class="header_nav">
+				<a href="" class="header_navs">О нас</a>
+				<a href="" class="header_navs">Стать репетитором</a>
+				<a href="" class="header_navs">Предметы</a>
+
+				<div class="vertical_blue_line">
+					
+				</div>
+
+				<div class="header_sign_in_up">
+					<a href="signin.html" class="header_sign_in">Вход</a>
+					<a href="signup.html" class="header_sign_up">Регистрация</a>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	<div class="subjects_tittle">Создание личного кабинета</div>
+	<div class="tittle_subtext">Информация очень важна для привлечения учеников. Постарайтесь заполнить все поля.</div>
+
+	<form id="reg_form" action="register.php" method="POST">
+		
+		<div class="registration_container">
+			<div class="registration_category">
+				Личная информация:
+			</div>
+			<div class="personal_information_left">
+				
+
+				<div class="input_and_text">
+					<p>Имя:</p>
+					<input class="input__edited" type="text" name="name" placeholder="Айгерим">
+				</div>
+
+				<div class="input_and_text">
+					<p>Фамилия:</p>
+					<input class="input__edited" type="text" name="surname" placeholder="Орумбай">
+				</div>
+
+				<div class="input_and_text">
+					<p>Отчество:</p>
+					<input class="input__edited" type="text" name="patronymic" placeholder="Искандеркызы">
+				</div>
+
+				<div class="input_and_text date">
+					<p>Дата рождения</p>
+					<input type="date" name="dateofbirth" id="date"  >
+				</div>
+
+				<div class="input_and_text">
+					<p>Пол:</p>
+					<label class="pol" for="gender"><img src="img/img_507320.png" alt=""></label>
+					<input class="input__edited radio" type="radio" name="gender" value="Мужской">
+					<label class="pol" for="gender"><img src="img/91-917535_812-x-980-1-business-woman-icon-png.png" alt=""></label>
+					<input class="input__edited radio" type="radio" name="gender" id="Женский">
+				</div>
+
+				<div class="input_and_text">
+					<p>E-mail:</p>
+					<input class="input__edited" type="text" name="email" placeholder="aitutors2016@gmail.com">
+				</div>
+
+				<div class="input_and_text">
+					<p>Пароль:</p>
+					<input class="input__edited" type="password" name="password" placeholder="Не менее 8 символов">
+				</div>
+
+				<div class="input_and_text">
+					<p>Номер телефона:</p>
+					<input class="input__edited" type="text" name="phone_number" id="input_phone" placeholder="+7(775)777-77-77">
+				</div>
+
+				<div class="input_and_text">
+					<p>Телеграм:</p>
+					<input class="input__edited" type="text" name="telegram" placeholder="@f0opy">
+				</div>
+
+			</div>
+
+			<div class="registration_category">
+				Информация по преподаванию:
+			</div>
+			<div class="input_and_text">
+				<p>Курс:</p>
+				<select name="course" id="course_select">
+					<option value="1">1 - курс</option>
+					<option value="2">2 - курс</option>
+					<option value="3">3 - курс</option>
+				</select>
+			</div>
+
+			<div class="input_and_text">
+				<p>GPA:</p>
+				<select name="gpa" id="course_select">
+					<option value="1">От 2 до 2.5</option>
+					<option value="2">От 2.5 до 3</option>
+					<option value="3">От 3 до 3.5</option>
+					<option value="3">От 3.5 до 4</option>
+				</select>
+			</div>
+
+
+		
+				<div class="input_and_text">
+					<p>Предмет:</p>	
+
+					<div class="information_educating_columns">
+						<input type="checkbox" class="custom-checkbox" id="ict" name="ict" value="1">
+						<label for="ict">ICT</label>
+						
+						<input type="checkbox" class="custom-checkbox" id="web" name="web" value="1">
+						<label for="web">WEB</label>
+
+						<input type="checkbox" class="custom-checkbox" id="java" name="java" value="1">
+						<label for="java">Java</label>
+
+						<input type="checkbox" class="custom-checkbox" id="cpp" name="cpp" value="1">
+						<label for="cpp">C++</label>
+
+						<input type="checkbox" class="custom-checkbox" id="calc1" name="calc1" value="1">
+						<label for="calc1">Calculus I</label>
+						
+						<input type="checkbox" class="custom-checkbox" id="calc2" name="calc2" value="1">
+						<label for="calc2">Calculus II</label>
+
+						<input type="checkbox" class="custom-checkbox" id="disk" name="disk" value="1">
+						<label for="disk">Discrete Math</label>
+						
+						<input type="checkbox" class="custom-checkbox" id="lalgebra" name="lalgebra" value="1">
+						<label for="lalgebra">Linear Algebra</label>
+					</div>
+
+				</div>
+
+				<div class="input_and_text">
+					<p>Цена:</p>
+					<input class="input__edited w-133" type="number" name="price" placeholder="2500">
+				</div>
+
+				<div class="input_and_text w258px">
+					<p>Язык преподавания:</p>
+					<input type="checkbox" class="custom-checkbox" id="russian" name="russian" value="1" checked>
+					<label for="russian">Русский</label>
+					<input type="checkbox" class="custom-checkbox" id="english" name="english" value="1">
+					<label for="english">Английский</label>
+					<input type="checkbox" class="custom-checkbox" id="kazakh" name="kazakh" value="1">
+					<label for="kazakh">Казахский</label>
+				</div>
+			
+				<div class="registration_category">
+				Дополнительная информация:
+				</div>
+				<div class="input_and_text fullwidth">
+					<p>Короткая информация о себе:</p>
+					<textarea class="persinformation" id="persinformation" name="persinformation" placeholder="Расскажите чем занимаетесь, какие достижения, награды и т.п.  "></textarea> 
+				</div>
+
+				<div class="input_and_text fullwidth">
+					<p>Информация о предмете::</p>
+					<textarea class="addinformation" id="subjectinformation" name="subjectinformation" placeholder="Напишите ваш опыт, методики и особенности обучения, какие результаты могут достичь ваши ученики по выбранным выше предметам и т.п.   "></textarea> 
+				</div>
+				<div class="registration_category mt-0">
+				Место преподавания:
+				</div>
+				<div class="input_and_text w136px">
+				<p>Ваш город:</p>
+				<select name="city" id="city">
+					<option value="Нур-Султан">Нур-Султан</option>
+					<option value="Алматы">Алматы</option>
+					<option value="Шымкент">Шымкент</option>
+					<option value="Актобе">Актобе</option>
+					<option value="Караганда">Караганда</option>
+					<option value="Тараз">Тараз</option>
+					<option value="Павлодар">Павлодар</option>
+					<option value="Усть-Каменогорск">Усть-Каменогорск</option>
+					<option value="Семей">Семей</option>
+					<option value="Атырау">Атырау</option>
+					<option value="Костанай">Костанай</option>
+				</select>
+				</div>
+				<div class="input_and_text w344px db">
+					<p>Способы преподавания:</p>
+					<input type="checkbox" class="custom-checkbox" id="online" name="online" value="1" checked>
+					<label for="online">Онлайн</label>
+					<input type="checkbox" class="custom-checkbox" id="usebya" name="usebya" value="1">
+					<label for="usebya">У себя</label>
+					<input type="checkbox" class="custom-checkbox" id="uchenika" name="uchenika" value="1">
+					<label for="uchenika">У ученика</label>
+
+				</div>
+				<div class="input_and_text w344px df ">
+					<p>Пробный бесплатный урок:</p>
+					<input class="input__edited radio" type="radio"  id="yes" name="free_lesson" value="1">
+					<label for="yes">Да</label>
+					<input class="input__edited radio" type="radio"  id="lesson" name="free_lesson" value="0" checked>
+					<label for="lesson">Нет</label>
+
+
+					
+
+				</div>
+				<button type="submit" name="submit" onclick="frmotpr()">Создать аккаунт</button>
+		</div>
+
+		
+	</form>
+		<div id="messenger" ></div>
+
+		<footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="img/logoPngAitututors.png" width="200px">
+                    </div>
+                        <div class="footer-navigator">
+                            <div class="footer-column">
+                                
+                                <h3 class="footer-column-title">Про</h3>
+                                <a href="#"><div class="footer-column-subtitle">Нас</div></a>
+                                <a href="#"><div class="footer-column-subtitle">Команду</div></a>
+                            </div>
+                            <div class="footer-column">
+                                <h3 class="footer-column-title">Контакты</h3>
+                                <img class="column-icon" src="img/black_webpict08_1484337066-1.png" width="43px"><a href="#"><div class="footer-column-subtitle wicon">+7 (777) 123 55 74</div></a>
+                                <img class="column-icon" src="img/unnamed%20(2).png" width="47px"><a href="#"><div class="footer-column-subtitle wicon">aitutors2016@gmail.com</div></a>
+                             </div>
+                             <div class="footer-column">
+                                <h3 class="footer-column-title">Ещё</h3>
+                                <a href="#"><div class="footer-column-subtitle">Условия</div></a>
+                                <a href="#"><div class="footer-column-subtitle">Справочник</div></a>
+                            </div>
+                        </div>
+                </div>
+                <hr class="blueline" width="1584px" color="#2890B9">
+                <div class="iconss">
+                    <a href="#"><img src="img/instagram.png"></a>
+                    <a href="#"><img src="img/telegram.png"></a>
+                    <a href="#"><img src="img/whatsapp.png"></a>
+                    <a href="#"><img src="img/twitter.png"></a>
+                    <a href="#"><img src="img/facebook%20(1).png"></a>
+                </div>
+                    
+                    
+        	</footer> <script src="https://unpkg.com/imask"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>
+   
+	
+
+
+</body>
+
+</html>
